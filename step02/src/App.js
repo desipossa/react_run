@@ -24,14 +24,14 @@ function App() {
   }
   //입력값 받아와서 배열에 입력하기 
   const onTodo = (e) => {
-    let todow = e.target.value;
-    setTodoItem(todow);
-    console.log(todow)
+    let todo = e.target.value;
+    setTodoItem(todo);
+    console.log(todo)
   }
   const Totolist = () => {
     return (
-      <ul onClick={onRemove} >
-        {todos.map(el => <li key={el.id} >{el.id} {el.content}</li>)}
+      <ul >
+        {todos.map(el => <li key={el.id} onClick={() => onRemove(el.id)}>{el.id} {el.content}</li>)}
       </ul>
 
     )
