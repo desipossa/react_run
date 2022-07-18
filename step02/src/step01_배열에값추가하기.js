@@ -24,7 +24,7 @@ function App() {
     }
     return (
         <Wrapper className="wrap">
-            <div onClick={onCreate}>dkdkdkdk</div>
+            <div onClick={onCreate}>click</div>
             <Totolist />
         </Wrapper>
     );
